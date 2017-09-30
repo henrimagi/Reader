@@ -65,6 +65,8 @@
 	NSDate *lastHideTime;
 
 	BOOL ignoreDidScroll;
+
+    BOOL statusBarHidden;
 }
 
 #pragma mark - Constants
@@ -150,7 +152,7 @@
     mainPagebar.frame = pagebarRect;
 
     CGRect toolbarRect = self.view.bounds;
-    toolbarRect.size.height = TOOLBAR_HEIGHT + self.view.layoutMargins.top;
+    toolbarRect.size.height = TOOLBAR_HEIGHT + self.view.layoutMargins.top + topGuide;
     mainToolbar.frame = toolbarRect;
 }
 
@@ -342,23 +344,7 @@
 
 	self.view.backgroundColor = [UIColor grayColor]; // Neutral gray
 
-	UIView *fakeStatusBar = nil; CGRect viewRect = self.view.bounds; // View bounds
-
-	if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) // iOS 7+
-	{
-		if ([self prefersStatusBarHidden] == NO) // Visible status bar
-		{
-			CGRect statusBarRect = viewRect; statusBarRect.size.height = STATUS_HEIGHT;
-			fakeStatusBar = [[UIView alloc] initWithFrame:statusBarRect]; // UIView
-			fakeStatusBar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-			fakeStatusBar.backgroundColor = [UIColor blackColor];
-			fakeStatusBar.contentMode = UIViewContentModeRedraw;
-			fakeStatusBar.userInteractionEnabled = NO;
-
-			viewRect.origin.y += STATUS_HEIGHT; viewRect.size.height -= STATUS_HEIGHT;
-		}
-	}
-
+    CGRect viewRect = self.view.bounds; // View bounds
 	CGRect scrollViewRect = CGRectInset(viewRect, -scrollViewOutset, 0.0f);
 	theScrollView = [[UIScrollView alloc] initWithFrame:scrollViewRect]; // All
 	theScrollView.autoresizesSubviews = NO; theScrollView.contentMode = UIViewContentModeRedraw;
@@ -378,8 +364,6 @@
 	mainPagebar = [[ReaderMainPagebar alloc] initWithFrame:pagebarRect document:document]; // ReaderMainPagebar
 	mainPagebar.delegate = self; // ReaderMainPagebarDelegate
 	[self.view addSubview:mainPagebar];
-
-	if (fakeStatusBar != nil) [self.view addSubview:fakeStatusBar]; // Add status bar background view
 
 	UITapGestureRecognizer *singleTapOne = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
 	singleTapOne.numberOfTouchesRequired = 1; singleTapOne.numberOfTapsRequired = 1; singleTapOne.delegate = self;
@@ -468,12 +452,12 @@
 
 - (BOOL)prefersStatusBarHidden
 {
-	return YES;
+	return UIDeviceOrientationIsLandscape(UIDevice.currentDevice.orientation) || statusBarHidden;
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
-	return UIStatusBarStyleLightContent;
+	return UIStatusBarStyleDefault;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -534,6 +518,36 @@
 	if ([touch.view isKindOfClass:[UIScrollView class]]) return YES;
 
 	return NO;
+}
+
+#pragma mark - Bars Hiding
+
+- (void)showBars
+{
+    statusBarHidden = NO;
+    [mainToolbar showToolbar]; [mainPagebar showPagebar];
+    [UIView animateWithDuration:0.25 animations:^{
+        [self setNeedsStatusBarAppearanceUpdate];
+    }];
+}
+
+static CGFloat topGuide = 0;
+
+- (void)hideBars
+{
+    [mainToolbar hideToolbar]; [mainPagebar hidePagebar]; // Hide
+    statusBarHidden = YES;
+    topGuide = self.view.layoutMargins.top;
+    [UIView animateWithDuration:0.25 animations:^{
+        [self setNeedsStatusBarAppearanceUpdate];
+    } completion:^(BOOL finished) {
+        topGuide = 0;
+    }];
+}
+
+- (UIStatusBarAnimation)preferredStatusBarUpdateAnimation
+{
+    return UIStatusBarAnimationFade;
 }
 
 #pragma mark - UIGestureRecognizer action methods
@@ -621,7 +635,7 @@
 				{
 					if ((mainToolbar.alpha < 1.0f) || (mainPagebar.alpha < 1.0f)) // Hidden
 					{
-						[mainToolbar showToolbar]; [mainPagebar showPagebar]; // Show
+						[self showBars]; // Show
 					}
 				}
 			}
@@ -716,7 +730,7 @@
 			if (CGRectContainsPoint(areaRect, point) == false) return;
 		}
 
-		[mainToolbar hideToolbar]; [mainPagebar hidePagebar]; // Hide
+        [self hideBars];
 
 		lastHideTime = [NSDate date]; // Set last hide time
 	}
