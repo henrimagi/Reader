@@ -140,6 +140,20 @@
 	[contentView showPageThumb:fileURL page:page password:phrase guid:guid]; // Request page preview thumb
 }
 
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+
+    CGRect pagebarRect = self.view.bounds;
+    pagebarRect.size.height = PAGEBAR_HEIGHT + self.view.layoutMargins.bottom;
+    pagebarRect.origin.y = (self.view.bounds.size.height - pagebarRect.size.height);
+    mainPagebar.frame = pagebarRect;
+
+    CGRect toolbarRect = self.view.bounds;
+    toolbarRect.size.height = TOOLBAR_HEIGHT + self.view.layoutMargins.top;
+    mainToolbar.frame = toolbarRect;
+}
+
 - (void)layoutContentViews:(UIScrollView *)scrollView
 {
 	CGFloat viewWidth = scrollView.bounds.size.width; // View width

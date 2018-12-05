@@ -29,6 +29,9 @@
 #import <QuartzCore/QuartzCore.h>
 
 @implementation UIXToolbarView
+{
+    UIView *lineView;
+}
 
 #pragma mark - Constants
 
@@ -77,7 +80,7 @@
 
 			CGRect lineRect = self.bounds; lineRect.origin.y += lineRect.size.height; lineRect.size.height = 1.0f;
 
-			UIView *lineView = [[UIView alloc] initWithFrame:lineRect];
+			lineView = [[UIView alloc] initWithFrame:lineRect];
 			lineView.autoresizesSubviews = NO;
 			lineView.userInteractionEnabled = NO;
 			lineView.contentMode = UIViewContentModeRedraw;
@@ -88,6 +91,13 @@
 	}
 
 	return self;
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    CGRect lineRect = self.bounds; lineRect.origin.y += lineRect.size.height; lineRect.size.height = 1.0f;
+    lineView.frame = lineRect;
 }
 
 @end

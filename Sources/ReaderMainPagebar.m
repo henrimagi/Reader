@@ -247,7 +247,8 @@
 
 - (void)layoutSubviews
 {
-	CGRect controlRect = CGRectInset(self.bounds, 4.0f, 0.0f);
+
+    CGRect controlRect = CGRectMake(0, 4, self.bounds.size.width, 40);
 
 	CGFloat thumbWidth = (THUMB_SMALL_WIDTH + THUMB_SMALL_GAP);
 

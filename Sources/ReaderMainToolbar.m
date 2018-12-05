@@ -35,6 +35,8 @@
 
 	UIImage *markImageN;
 	UIImage *markImageY;
+
+    UIView* containerView;
 }
 
 #pragma mark - Constants
@@ -72,6 +74,10 @@
 	{
 		CGFloat viewWidth = self.bounds.size.width; // Toolbar view width
 
+        containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, viewWidth, 44)];
+        containerView.backgroundColor = [UIColor clearColor];
+        [self addSubview:containerView];
+
 #if (READER_FLAT_UI == TRUE) // Option
 		UIImage *buttonH = nil; UIImage *buttonN = nil;
 #else
@@ -106,7 +112,7 @@
 		//doneButton.backgroundColor = [UIColor grayColor];
 		doneButton.exclusiveTouch = YES;
 
-		[self addSubview:doneButton]; leftButtonX += (doneButtonWidth + buttonSpacing);
+		[containerView addSubview:doneButton]; leftButtonX += (doneButtonWidth + buttonSpacing);
 
 		titleX += (doneButtonWidth + buttonSpacing); titleWidth -= (doneButtonWidth + buttonSpacing);
 
@@ -124,7 +130,7 @@
 		//thumbsButton.backgroundColor = [UIColor grayColor];
 		thumbsButton.exclusiveTouch = YES;
 
-		[self addSubview:thumbsButton]; //leftButtonX += (iconButtonWidth + buttonSpacing);
+		[containerView addSubview:thumbsButton]; //leftButtonX += (iconButtonWidth + buttonSpacing);
 
 		titleX += (iconButtonWidth + buttonSpacing); titleWidth -= (iconButtonWidth + buttonSpacing);
 
@@ -146,7 +152,7 @@
 		//flagButton.backgroundColor = [UIColor grayColor];
 		flagButton.exclusiveTouch = YES;
 
-		[self addSubview:flagButton]; titleWidth -= (iconButtonWidth + buttonSpacing);
+		[containerView addSubview:flagButton]; titleWidth -= (iconButtonWidth + buttonSpacing);
 
 		markButton = flagButton; markButton.enabled = NO; markButton.tag = NSIntegerMin;
 
@@ -175,7 +181,7 @@
 					//emailButton.backgroundColor = [UIColor grayColor];
 					emailButton.exclusiveTouch = YES;
 
-					[self addSubview:emailButton]; titleWidth -= (iconButtonWidth + buttonSpacing);
+					[containerView addSubview:emailButton]; titleWidth -= (iconButtonWidth + buttonSpacing);
 				}
 			}
 		}
@@ -198,7 +204,7 @@
 				//printButton.backgroundColor = [UIColor grayColor];
 				printButton.exclusiveTouch = YES;
 
-				[self addSubview:printButton]; titleWidth -= (iconButtonWidth + buttonSpacing);
+				[containerView addSubview:printButton]; titleWidth -= (iconButtonWidth + buttonSpacing);
 			}
 		}
 
@@ -216,7 +222,7 @@
 			//exportButton.backgroundColor = [UIColor grayColor];
 			exportButton.exclusiveTouch = YES;
 
-			[self addSubview:exportButton]; titleWidth -= (iconButtonWidth + buttonSpacing);
+			[containerView addSubview:exportButton]; titleWidth -= (iconButtonWidth + buttonSpacing);
 		}
 
 		if (largeDevice == YES) // Show document filename in toolbar
@@ -239,7 +245,7 @@
 			titleLabel.shadowOffset = CGSizeMake(0.0f, 1.0f);
 #endif // end of READER_FLAT_UI Option
 
-			[self addSubview:titleLabel]; 
+			[containerView addSubview:titleLabel];
 		}
 	}
 
@@ -319,6 +325,15 @@
 			completion:NULL
 		];
 	}
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    CGRect frame = self.bounds;
+    frame.origin.y = frame.size.height - 44;
+    frame.size.height = 44;
+    containerView.frame = frame;
 }
 
 #pragma mark - UIButton action methods
