@@ -27,26 +27,26 @@
 
 @interface ReaderDocument : NSObject <NSObject, NSCoding>
 
-@property (nonatomic, strong, readonly) NSString *guid;
-@property (nonatomic, strong, readonly) NSDate *fileDate;
-@property (nonatomic, strong, readwrite) NSDate *lastOpen;
-@property (nonatomic, strong, readonly) NSNumber *fileSize;
-@property (nonatomic, strong, readonly) NSNumber *pageCount;
-@property (nonatomic, strong, readwrite) NSNumber *pageNumber;
-@property (nonatomic, strong, readonly) NSMutableIndexSet *bookmarks;
-@property (nonatomic, strong, readonly) NSString *password;
-@property (nonatomic, strong, readonly) NSString *fileName;
-@property (nonatomic, strong, readonly) NSURL *fileURL;
+@property (nonatomic, strong, readonly, nonnull) NSString *guid;
+@property (nonatomic, strong, readonly, nonnull) NSDate *fileDate;
+@property (nonatomic, strong, readwrite, nonnull) NSDate *lastOpen;
+@property (nonatomic, strong, readonly, nonnull) NSNumber *fileSize;
+@property (nonatomic, strong, readonly, nonnull) NSNumber *pageCount;
+@property (nonatomic, strong, readwrite, nonnull) NSNumber *pageNumber;
+@property (nonatomic, strong, readonly, nonnull) NSMutableIndexSet *bookmarks;
+@property (nonatomic, strong, readonly, nonnull) NSString *password;
+@property (nonatomic, strong, readonly, nonnull) NSString *fileName;
+@property (nonatomic, strong, readonly, nonnull) NSURL *fileURL;
 
 @property (nonatomic, readonly) BOOL canEmail;
 @property (nonatomic, readonly) BOOL canExport;
 @property (nonatomic, readonly) BOOL canPrint;
 
-+ (ReaderDocument *)withDocumentFilePath:(NSString *)filePath password:(NSString *)phrase;
++ (nullable ReaderDocument *)withDocumentFilePath:(nonnull NSString *)filePath password:(nullable NSString *)phrase;
 
-+ (ReaderDocument *)unarchiveFromFileName:(NSString *)filePath password:(NSString *)phrase;
++ (nullable ReaderDocument *)unarchiveFromFileName:(nonnull NSString *)filePath password:(nullable NSString *)phrase;
 
-- (instancetype)initWithFilePath:(NSString *)filePath password:(NSString *)phrase;
+- (nullable instancetype)initWithFilePath:(nonnull NSString *)filePath password:(nullable NSString *)phrase;
 
 - (BOOL)archiveDocumentProperties;
 

@@ -33,14 +33,14 @@
 
 @optional // Delegate protocols
 
-- (void)dismissReaderViewController:(ReaderViewController *)viewController;
+- (void)dismissReaderViewController:(nonnull ReaderViewController *)viewController;
 
 @end
 
 @interface ReaderViewController : UIViewController
 
-@property (nonatomic, weak, readwrite) id <ReaderViewControllerDelegate> delegate;
+@property (nonatomic, weak, readwrite, nullable) id <ReaderViewControllerDelegate> delegate;
 
-- (instancetype)initWithReaderDocument:(ReaderDocument *)object;
+- (nonnull instancetype)initWithReaderDocument:(nonnull ReaderDocument *)object;
 
 @end
