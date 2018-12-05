@@ -69,7 +69,60 @@
 		45D9843C1C501B0300ADFD5E /* Reader-Mark-Y@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D984341C501B0300ADFD5E /* Reader-Mark-Y@3x.png */; };
 		45D9843D1C501B0300ADFD5E /* Reader-Print@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D984351C501B0300ADFD5E /* Reader-Print@3x.png */; };
 		45D9843E1C501B0300ADFD5E /* Reader-Thumbs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D984361C501B0300ADFD5E /* Reader-Thumbs@3x.png */; };
+		BB5132251E68368E002E8CF9 /* ReaderConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB72F0141FC0B1003524C3 /* ReaderConstants.m */; };
+		BB5132261E68368E002E8CF9 /* ReaderDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB72F8141FC0B1003524C3 /* ReaderDocument.m */; };
+		BB5132271E68368E002E8CF9 /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB730E141FC0B1003524C3 /* ReaderViewController.m */; };
+		BB5132281E68368E002E8CF9 /* ReaderMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB72FC141FC0B1003524C3 /* ReaderMainToolbar.m */; };
+		BB5132291E68368E002E8CF9 /* ReaderMainPagebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB72FA141FC0B1003524C3 /* ReaderMainPagebar.m */; };
+		BB51322A1E68368E002E8CF9 /* ReaderContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB72F6141FC0B1003524C3 /* ReaderContentView.m */; };
+		BB51322B1E68368E002E8CF9 /* ReaderContentPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB72F2141FC0B1003524C3 /* ReaderContentPage.m */; };
+		BB51322C1E68368E002E8CF9 /* ReaderContentTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB72F4141FC0B1003524C3 /* ReaderContentTile.m */; };
+		BB51322D1E68368E002E8CF9 /* ThumbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB7312141FC0B1003524C3 /* ThumbsViewController.m */; };
+		BB51322E1E68368E002E8CF9 /* ThumbsMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB7310141FC0B1003524C3 /* ThumbsMainToolbar.m */; };
+		BB51322F1E68368E002E8CF9 /* CGPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB72EE141FC0B1003524C3 /* CGPDFDocument.m */; };
+		BB5132301E68368E002E8CF9 /* ReaderDocumentOutline.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D5ADA21610EADC00706B9A /* ReaderDocumentOutline.m */; };
+		BB5132311E68368E002E8CF9 /* ReaderThumbRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB7308141FC0B1003524C3 /* ReaderThumbRequest.m */; };
+		BB5132321E68368E002E8CF9 /* ReaderThumbCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB7300141FC0B1003524C3 /* ReaderThumbCache.m */; };
+		BB5132331E68368E002E8CF9 /* ReaderThumbQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB7304141FC0B1003524C3 /* ReaderThumbQueue.m */; };
+		BB5132341E68368E002E8CF9 /* ReaderThumbFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB7302141FC0B1003524C3 /* ReaderThumbFetch.m */; };
+		BB5132351E68368E002E8CF9 /* ReaderThumbRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB7306141FC0B1003524C3 /* ReaderThumbRender.m */; };
+		BB5132361E68368E002E8CF9 /* ReaderThumbsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB730A141FC0B1003524C3 /* ReaderThumbsView.m */; };
+		BB5132371E68368E002E8CF9 /* ReaderThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AB730C141FC0B1003524C3 /* ReaderThumbView.m */; };
+		BB5132381E68368E002E8CF9 /* UIXToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 455C7890142687CA0053D73B /* UIXToolbarView.m */; };
+		BB51323A1E6836F4002E8CF9 /* ReaderConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AB72EF141FC0B1003524C3 /* ReaderConstants.h */; };
+		BB51323B1E6836F4002E8CF9 /* ReaderDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AB72F7141FC0B1003524C3 /* ReaderDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB51323C1E6836F4002E8CF9 /* ReaderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AB730D141FC0B1003524C3 /* ReaderViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB51323D1E6836F4002E8CF9 /* ReaderMainToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AB72FB141FC0B1003524C3 /* ReaderMainToolbar.h */; };
+		BB51323E1E6836F4002E8CF9 /* ReaderMainPagebar.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AB72F9141FC0B1003524C3 /* ReaderMainPagebar.h */; };
+		BB51323F1E6836F4002E8CF9 /* ReaderContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AB72F5141FC0B1003524C3 /* ReaderContentView.h */; };
+		BB5132401E6836F4002E8CF9 /* ReaderContentPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AB72F1141FC0B1003524C3 /* ReaderContentPage.h */; };
+		BB5132411E6836F4002E8CF9 /* ReaderContentTile.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AB72F3141FC0B1003524C3 /* ReaderContentTile.h */; };
+		BB5132421E6836F4002E8CF9 /* ThumbsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AB7311141FC0B1003524C3 /* ThumbsViewController.h */; };
+		BB5132431E6836F4002E8CF9 /* ThumbsMainToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AB730F141FC0B1003524C3 /* ThumbsMainToolbar.h */; };
+		BB5132441E6836F4002E8CF9 /* CGPDFDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AB72ED141FC0B1003524C3 /* CGPDFDocument.h */; };
+		BB5132451E6836F4002E8CF9 /* ReaderDocumentOutline.h in Headers */ = {isa = PBXBuildFile; fileRef = 45D5ADA11610EADC00706B9A /* ReaderDocumentOutline.h */; };
+		BB5132461E6836F4002E8CF9 /* ReaderThumbRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AB7307141FC0B1003524C3 /* ReaderThumbRequest.h */; };
+		BB5132471E6836F4002E8CF9 /* ReaderThumbCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AB72FF141FC0B1003524C3 /* ReaderThumbCache.h */; };
+		BB5132481E6836F4002E8CF9 /* ReaderThumbQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AB7303141FC0B1003524C3 /* ReaderThumbQueue.h */; };
+		BB5132491E6836F4002E8CF9 /* ReaderThumbFetch.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AB7301141FC0B1003524C3 /* ReaderThumbFetch.h */; };
+		BB51324A1E6836F4002E8CF9 /* ReaderThumbRender.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AB7305141FC0B1003524C3 /* ReaderThumbRender.h */; };
+		BB51324B1E6836F4002E8CF9 /* ReaderThumbsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AB7309141FC0B1003524C3 /* ReaderThumbsView.h */; };
+		BB51324C1E6836F4002E8CF9 /* ReaderThumbView.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AB730B141FC0B1003524C3 /* ReaderThumbView.h */; };
+		BB51324D1E6836F4002E8CF9 /* UIXToolbarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 455C788F142687CA0053D73B /* UIXToolbarView.h */; };
+		BBDF8AF31E936F31002CAF1D /* Adele.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BBDF8AF21E936F31002CAF1D /* Adele.pdf */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB5132191E68364E002E8CF9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -167,6 +220,8 @@
 		45D984351C501B0300ADFD5E /* Reader-Print@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Reader-Print@3x.png"; path = "Graphics/Reader-Print@3x.png"; sourceTree = "<group>"; };
 		45D984361C501B0300ADFD5E /* Reader-Thumbs@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Reader-Thumbs@3x.png"; path = "Graphics/Reader-Thumbs@3x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Reader-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Reader-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		BB51321B1E68364E002E8CF9 /* libpdfReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpdfReader.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBDF8AF21E936F31002CAF1D /* Adele.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Adele.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +235,13 @@
 				450A670411D27B9D00014BF5 /* QuartzCore.framework in Frameworks */,
 				45BD5AFE13AE721A00D6FE97 /* MessageUI.framework in Frameworks */,
 				458DDFD7140D45FA00C5DA94 /* ImageIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5132181E68364E002E8CF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* Reader.app */,
+				BB51321B1E68364E002E8CF9 /* libpdfReader.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -240,6 +303,7 @@
 				45AB72DF141FC04B003524C3 /* README.md */,
 				45D5AD9E1610E66B00706B9A /* HISTORY.md */,
 				45AB72DD141FC043003524C3 /* LICENSE.md */,
+				BBDF8AF21E936F31002CAF1D /* Adele.pdf */,
 				45AB72DB141FC039003524C3 /* Reader.pdf */,
 			);
 			name = Resources;
@@ -375,6 +439,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BB5132391E6836E4002E8CF9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB51323C1E6836F4002E8CF9 /* ReaderViewController.h in Headers */,
+				BB51323B1E6836F4002E8CF9 /* ReaderDocument.h in Headers */,
+				BB51323A1E6836F4002E8CF9 /* ReaderConstants.h in Headers */,
+				BB51323D1E6836F4002E8CF9 /* ReaderMainToolbar.h in Headers */,
+				BB51323E1E6836F4002E8CF9 /* ReaderMainPagebar.h in Headers */,
+				BB51323F1E6836F4002E8CF9 /* ReaderContentView.h in Headers */,
+				BB5132401E6836F4002E8CF9 /* ReaderContentPage.h in Headers */,
+				BB5132411E6836F4002E8CF9 /* ReaderContentTile.h in Headers */,
+				BB5132421E6836F4002E8CF9 /* ThumbsViewController.h in Headers */,
+				BB5132431E6836F4002E8CF9 /* ThumbsMainToolbar.h in Headers */,
+				BB5132441E6836F4002E8CF9 /* CGPDFDocument.h in Headers */,
+				BB5132451E6836F4002E8CF9 /* ReaderDocumentOutline.h in Headers */,
+				BB5132461E6836F4002E8CF9 /* ReaderThumbRequest.h in Headers */,
+				BB5132471E6836F4002E8CF9 /* ReaderThumbCache.h in Headers */,
+				BB5132481E6836F4002E8CF9 /* ReaderThumbQueue.h in Headers */,
+				BB5132491E6836F4002E8CF9 /* ReaderThumbFetch.h in Headers */,
+				BB51324A1E6836F4002E8CF9 /* ReaderThumbRender.h in Headers */,
+				BB51324B1E6836F4002E8CF9 /* ReaderThumbsView.h in Headers */,
+				BB51324C1E6836F4002E8CF9 /* ReaderThumbView.h in Headers */,
+				BB51324D1E6836F4002E8CF9 /* UIXToolbarView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		1D6058900D05DD3D006BFB54 /* Reader */ = {
 			isa = PBXNativeTarget;
@@ -393,6 +487,25 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* Reader.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BB51321A1E68364E002E8CF9 /* pdfReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5132211E68364E002E8CF9 /* Build configuration list for PBXNativeTarget "pdfReader" */;
+			buildPhases = (
+				BB5132171E68364E002E8CF9 /* Sources */,
+				BB5132181E68364E002E8CF9 /* Frameworks */,
+				BB5132191E68364E002E8CF9 /* CopyFiles */,
+				BB5132391E6836E4002E8CF9 /* Headers */,
+				BB51324E1E6838BC002E8CF9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pdfReader;
+			productName = pdfReader;
+			productReference = BB51321B1E68364E002E8CF9 /* libpdfReader.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -402,7 +515,12 @@
 				LastUpgradeCheck = 0800;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = 93KDX755KN;
+						DevelopmentTeam = X62ZR3B9UC;
+					};
+					BB51321A1E68364E002E8CF9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = X62ZR3B9UC;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -421,6 +539,7 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* Reader */,
+				BB51321A1E68364E002E8CF9 /* pdfReader */,
 			);
 		};
 /* End PBXProject section */
@@ -436,6 +555,7 @@
 				4524A6EE1C500F2F00D7DF7F /* AppIcon-167.png in Resources */,
 				45AB72C9141FBFCA003524C3 /* Reader-Email.png in Resources */,
 				45AB72CA141FBFCA003524C3 /* Reader-Email@2x.png in Resources */,
+				BBDF8AF31E936F31002CAF1D /* Adele.pdf in Resources */,
 				45AB72CB141FBFCA003524C3 /* Reader-Mark-N.png in Resources */,
 				45AB72CC141FBFCA003524C3 /* Reader-Mark-N@2x.png in Resources */,
 				45D9843E1C501B0300ADFD5E /* Reader-Thumbs@3x.png in Resources */,
@@ -466,6 +586,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB51324E1E6838BC002E8CF9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "##########################################\n#\n# c.f. http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n#\n# Version 2.82\n#\n# Latest Change:\n# - MORE tweaks to get the iOS 10+ and 9- working\n# - Support iOS 10+\n# - Corrected typo for iOS 1-10+ (thanks @stuikomma)\n#\n# Purpose:\n#   Automatically create a Universal static library for iPhone + iPad + iPhone Simulator from within XCode\n#\n# Author: Adam Martin - http://twitter.com/redglassesapps\n# Based on: original script from Eonil (main changes: Eonil's script WILL NOT WORK in Xcode GUI - it WILL CRASH YOUR COMPUTER)\n#\n\nset -e\nset -o pipefail\n\n#################[ Tests: helps workaround any future bugs in Xcode ]########\n#\nDEBUG_THIS_SCRIPT=\"false\"\n\nif [ $DEBUG_THIS_SCRIPT = \"true\" ]\nthen\necho \"########### TESTS #############\"\necho \"Use the following variables when debugging this script; note that they may change on recursions\"\necho \"BUILD_DIR = $BUILD_DIR\"\necho \"BUILD_ROOT = $BUILD_ROOT\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\necho \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\necho \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\necho \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n\n#####################[ part 1 ]##################\n# First, work out the BASESDK version number (NB: Apple ought to report this, but they hide it)\n#    (incidental: searching for substrings in sh is a nightmare! Sob)\n\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '\\d\\{1,2\\}\\.\\d\\{1,2\\}$')\n\n# Next, work out if we're in SIM or DEVICE\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n#\n#####################[ end of part 1 ]##################\n\n#####################[ part 2 ]##################\n#\n# IF this is the original invocation, invoke WHATEVER other builds are required\n#\n# Xcode is already building ONE target...\n#\n# ...but this is a LIBRARY, so Apple is wrong to set it to build just one.\n# ...we need to build ALL targets\n# ...we MUST NOT re-build the target that is ALREADY being built: Xcode WILL CRASH YOUR COMPUTER if you try this (infinite recursion!)\n#\n#\n# So: build ONLY the missing platforms/configurations.\n\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: I am NOT the root invocation, so I'm NOT going to recurse\"\nelse\n# CRITICAL:\n# Prevent infinite recursion (Xcode sucks)\nexport ALREADYINVOKED=\"true\"\n\necho \"RECURSION: I am the root ... recursing all missing build targets NOW...\"\necho \"RECURSION: ...about to invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -project \\\"${PROJECT_NAME}.xcodeproj\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\" BUILD_DIR=\\\"${BUILD_DIR}\\\" BUILD_ROOT=\\\"${BUILD_ROOT}\\\" SYMROOT=\\\"${SYMROOT}\\\"\n\nxcodebuild -configuration \"${CONFIGURATION}\" -project \"${PROJECT_NAME}.xcodeproj\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\"\n\nACTION=\"build\"\n\n#Merge all platform binaries as a fat binary for each configurations.\n\n# Calculate where the (multiple) built files are coming from:\nCURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\nCURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\n\necho \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\necho \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\n\nCREATING_UNIVERSAL_DIR=${SRCROOT}/${PROJECT_NAME}-universal\necho \"...I will output a universal build to: ${CREATING_UNIVERSAL_DIR}\"\n\n# ... remove the products of previous runs of this script\n#      NB: this directory is ONLY created by this script - it should be safe to delete!\n\nrm -rf \"${CREATING_UNIVERSAL_DIR}\"\nmkdir \"${CREATING_UNIVERSAL_DIR}\"\n\n#\necho \"lipo: for current configuration (${CONFIGURATION}) creating output file: ${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nxcrun -sdk iphoneos lipo -create -output \"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\n#########\n#\n# Added: StackOverflow suggestion to also copy \"include\" files\n#    (untested, but should work OK)\n#\necho \"Fetching headers from ${PUBLIC_HEADERS_FOLDER_PATH}\"\necho \"  (if you embed your library project in another project, you will need to add\"\necho \"   a \"User Search Headers\" build setting of: (NB INCLUDE THE DOUBLE QUOTES BELOW!)\"\necho '        \"$(TARGET_BUILD_DIR)/usr/local/include/\"'\nif [ -d \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\" ]\nthen\nmkdir -p \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\n# * needs to be outside the double quotes?\ncp -r \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"* \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\nfi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -499,6 +635,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB5132171E68364E002E8CF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5132251E68368E002E8CF9 /* ReaderConstants.m in Sources */,
+				BB5132261E68368E002E8CF9 /* ReaderDocument.m in Sources */,
+				BB5132271E68368E002E8CF9 /* ReaderViewController.m in Sources */,
+				BB5132281E68368E002E8CF9 /* ReaderMainToolbar.m in Sources */,
+				BB5132291E68368E002E8CF9 /* ReaderMainPagebar.m in Sources */,
+				BB51322A1E68368E002E8CF9 /* ReaderContentView.m in Sources */,
+				BB51322B1E68368E002E8CF9 /* ReaderContentPage.m in Sources */,
+				BB51322C1E68368E002E8CF9 /* ReaderContentTile.m in Sources */,
+				BB51322D1E68368E002E8CF9 /* ThumbsViewController.m in Sources */,
+				BB51322E1E68368E002E8CF9 /* ThumbsMainToolbar.m in Sources */,
+				BB51322F1E68368E002E8CF9 /* CGPDFDocument.m in Sources */,
+				BB5132301E68368E002E8CF9 /* ReaderDocumentOutline.m in Sources */,
+				BB5132311E68368E002E8CF9 /* ReaderThumbRequest.m in Sources */,
+				BB5132321E68368E002E8CF9 /* ReaderThumbCache.m in Sources */,
+				BB5132331E68368E002E8CF9 /* ReaderThumbQueue.m in Sources */,
+				BB5132341E68368E002E8CF9 /* ReaderThumbFetch.m in Sources */,
+				BB5132351E68368E002E8CF9 /* ReaderThumbRender.m in Sources */,
+				BB5132361E68368E002E8CF9 /* ReaderThumbsView.m in Sources */,
+				BB5132371E68368E002E8CF9 /* ReaderThumbView.m in Sources */,
+				BB5132381E68368E002E8CF9 /* UIXToolbarView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -522,7 +685,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 93KDX755KN;
+				DEVELOPMENT_TEAM = X62ZR3B9UC;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -539,7 +702,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
-				DEVELOPMENT_TEAM = 93KDX755KN;
+				DEVELOPMENT_TEAM = X62ZR3B9UC;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Reader-Prefix.pch";
 				INFOPLIST_FILE = "Reader-Info.plist";
@@ -588,7 +751,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
-				DEVELOPMENT_TEAM = 93KDX755KN;
+				DEVELOPMENT_TEAM = X62ZR3B9UC;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Reader-Prefix.pch";
 				INFOPLIST_FILE = "Reader-Info.plist";
@@ -596,6 +759,95 @@
 				PRODUCT_NAME = Reader;
 			};
 			name = Testing;
+		};
+		BB5132221E68364E002E8CF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = X62ZR3B9UC;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BB5132231E68364E002E8CF9 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = X62ZR3B9UC;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Testing;
+		};
+		BB5132241E68364E002E8CF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = X62ZR3B9UC;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -673,6 +925,16 @@
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				458529CF13DDE2DF00EDC79D /* Testing */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5132211E68364E002E8CF9 /* Build configuration list for PBXNativeTarget "pdfReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5132221E68364E002E8CF9 /* Debug */,
+				BB5132231E68364E002E8CF9 /* Testing */,
+				BB5132241E68364E002E8CF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
